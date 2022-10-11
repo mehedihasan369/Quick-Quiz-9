@@ -11,13 +11,12 @@ const Home = () => {
    console.log(topics.data)
     return (
         <div>
-         <h2> ei bar mil </h2>
+            <div className='m-5 p-2 d-flex  justify-content-between row'>
          {
             topics.data.map(topic=><Topic
             key={topic.id} topics={topic} ></Topic>)
          }
-         
-            
+         </div>    
         </div>
     );
 };
