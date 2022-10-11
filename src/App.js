@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
 import Analytics from './Components/Analytics/Analytics';
+import Quizes from './Components/Quizes/Quizes';
 
 
 
@@ -22,12 +23,20 @@ function App() {
         element: <Home></Home>},
 
         {path:'blog' , element: <Blog></Blog>},
-        {path: 'statistics' , element: <Analytics></Analytics> },
+        {path: 'statistics' , element: <Analytics></Analytics> }, 
         
+        {
+          path: '/quiz/:id' ,
+          loader: async ({params}) => {
+            return fetch('https://openapi.programming-hero.com/api/quiz/${id}')
+          },
+          element: <Quizes></Quizes>
+        }
         
       ]
-    }
-     
+    },
+
+     { path: '*', element: <div>This route not found: 404</div> }
       ])
   return (
     <div className="App">

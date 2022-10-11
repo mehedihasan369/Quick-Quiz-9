@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 const Topic = ({topics}) => {
     
-const {name,total,logo} = topics
+const {name,total,logo,id} = topics
     // console.log(topics.name)
     return (
         <div className='col-sm  mb-5 '>
@@ -15,9 +16,12 @@ const {name,total,logo} = topics
         <Card.Text className='fw-semibold'>
           {total} Questions
         </Card.Text>
-        <Button variant="outline-dark fw-bold w-100 ">Lets Start</Button>
+        
+        <Link to={`/quiz/${id}`} className="outline-dark text-decoration-none btn btn-outline-dark fw-bold w-100 ">Lets Start</Link>
       </Card.Body>
     </Card>
+
+   
         </div>
     );
 };
