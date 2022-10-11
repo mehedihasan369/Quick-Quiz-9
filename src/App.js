@@ -1,12 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-import { Navbar } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MyNavbar from './Components/Navbar/MyNavbar';
+import Home from './Components/Home/Home';
+import Blog from './Components/Blog/Blog';
 
 
-function App() {
+
+function App() {  
+    const router = createBrowserRouter([
+      {path: '/', element:<MyNavbar></MyNavbar>,
+      children: [
+        { path:'/' , element: <Home></Home>},
+        { path:'home' , element: <Home></Home>},
+        {path:'blog' , element: <Blog></Blog>}
+        
+      ]
+    }
+     
+      ])
   return (
     <div className="App">
-      <h1>oiioh</h1>
+       
+    <RouterProvider router={router}></RouterProvider>
+   
     </div>
   );
 }
