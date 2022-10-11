@@ -11,11 +11,11 @@ const {name,total,logo} = topics
             <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" className='bg-secondary' src={logo} />
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
-          {total}Questions
+        <Card.Title className='fw-bold fs-5'>{name}</Card.Title>
+        <Card.Text className='fw-semibold'>
+          {total} Questions
         </Card.Text>
-        <Button variant="outline-dark">Lets Start</Button>
+        <Button variant="outline-dark fw-bold w-100 ">Lets Start</Button>
       </Card.Body>
     </Card>
         </div>
