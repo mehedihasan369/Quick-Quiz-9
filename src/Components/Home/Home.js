@@ -8,7 +8,7 @@ import Topic from '../Topic/Topic';
 
 const Home = () => {
     const topics = useLoaderData();
-   console.log(topics.data)
+//    console.log(topics.data)
     return (
         <div className='container'>
            <div className='d-flex '>

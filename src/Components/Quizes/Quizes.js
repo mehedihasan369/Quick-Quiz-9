@@ -1,11 +1,22 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Questions from '../questions/Questions';
 
-const Quizes = () => {
-    return (
+const TopQuiz = () => {
+    const quiz = useLoaderData();
+    console.log(quiz)
+    const name = quiz.data.name
+      return (
         <div>
-            <h1>This is quizes</h1>
+            <h1>Here is {name} questions..</h1>
+
+            {
+         quiz.data.questions.map(question => <Questions key={question.id} question={question}></Questions>)
+           }
+            
+            
         </div>
     );
 };
 
-export default Quizes;
+export default TopQuiz;
