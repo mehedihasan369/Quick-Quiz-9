@@ -15,15 +15,23 @@ function App() {
     const router = createBrowserRouter([
       {path: '/', element: <Header></Header>,
       children: [
-        { path:'/' , element: <Home></Home>},
+        { path:'/' ,
+        loader:() => {
+          return fetch('https://openapi.programming-hero.com/api/quiz');
+        },
+         element: <Home></Home>},
         { path:'home' ,
         loader:() => {
-          return fetch(`https://openapi.programming-hero.com/api/quiz`);
+          return fetch('https://openapi.programming-hero.com/api/quiz');
         },
         element: <Home></Home>},
 
         {path:'blog' , element: <Blog></Blog>},
-        {path: 'statistics' , element: <Analytics></Analytics> }, 
+        {path: 'statistics' ,
+        loader:() => {
+          return fetch('https://openapi.programming-hero.com/api/quiz');
+        },
+        element: <Analytics></Analytics> }, 
         
         {
           path: '/quiz/:id' ,
