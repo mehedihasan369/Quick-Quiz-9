@@ -1,3 +1,6 @@
+* # Here is the link of live site
+*https://splendid-daffodil-c32cd2.netlify.app/home
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
