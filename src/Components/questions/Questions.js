@@ -28,12 +28,7 @@ console.log(rightAnswer)
     
    
     return (<div>
-                    {/* function check (params) {
-                      if () {
-                        setShow(true)
-                      }
-                    } */}
- 
+                    
         <div className='border border-3 border-dark w-auto m-5 p-3 rounded-3'>
           
  
@@ -68,7 +63,7 @@ console.log(rightAnswer)
           <Toast.Body>Please, try again..</Toast.Body>
         </Toast>
         </div>   
-             <div className=''>
+             <div className='options'>
              {
                 // question.options.map(option =><Options key={option.id} option={option} correctAnswer={question}></Options> )
                 question.options.map(option => <Button  onClick={() => optionToast(option)} variant="outline-dark w-100 m-1 fw-semibold "> {option} </Button>
