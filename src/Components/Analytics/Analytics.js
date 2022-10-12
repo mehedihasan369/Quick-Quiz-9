@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import './Analytics.css'
 
 
 const Analytics = () => {
@@ -11,10 +12,10 @@ const Analytics = () => {
     // const data = [topics.data];
 
     return (
-        <div>
+        <div className='align-middle'>
             <h1>Here is the statistics</h1>
-            <div className='w-75'>
-            <LineChart width={1000} height={400} data={topics.data}>
+            <div className='w-75 '>
+            <LineChart width={350} height={200} className='chart  ' data={topics.data}>
     <Line type="monotone" dataKey="total" stroke="#8884d8" />
     <CartesianGrid stroke="#ccc" />
     <XAxis dataKey="name" />

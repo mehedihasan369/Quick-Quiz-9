@@ -1,26 +1,43 @@
-import React from 'react';
-import Form from 'react-bootstrap/Form';
+// import React from 'react';
+// import Button from 'react-bootstrap/Button';
+// import  { useState } from 'react';
+// import Toast from 'react-bootstrap/Toast';
 
-const Options = ({option}) => {
-    return (
-        <div className='fw-semibold d-flex'>
-  <Form>
-      {['radio'].map((type) => (
-        <div key={`inline-${type}`} className="mb-3">
-          <Form.Check
-            inline
-            label= {option}
-            name="group1"
-            type={type}
-            id={`inline-${type}`}
-          />
-          
+// const Options = ({option},{correctAnswer}) => {
+//   console.log(correctAnswer)
 
-        </div>
-      ))}
-    </Form>
-        </div>
-    );
-};
+//  const optionToast = (value) => {
+//   // if (value === {}) {
+//   //   return setShow(true);
+//   // } else {
+//   //   return setShow(false);
+//   // }
+//   return setShow(true);
 
-export default Options;
+//   }
+//   const [show, setShow] = useState(false);
+  
+  
+//     return (
+//       <div>
+//          <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+//           <Toast.Header>
+//             <img
+//               src="holder.js/20x20?text=%20"
+//               className="rounded me-2"
+//               alt=""
+//             />
+//             <strong className="me-auto">Bootstrap</strong>
+//             <small>11 mins ago</small>
+//           </Toast.Header>
+//           <Toast.Body> you're reading this text in a Toast!</Toast.Body>
+//         </Toast>
+      
+//         <div className=''>
+//    <Button variant="outline-dark w-100 m-1 fw-semibold " onClick={() => optionToast({option})}>{option}</Button>
+//         </div>
+//         </div>
+//     );
+// };
+
+// export default Options;
