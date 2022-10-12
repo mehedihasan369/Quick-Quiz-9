@@ -1,3 +1,12 @@
+* # Here is the link of live site.
+* https://splendid-daffodil-c32cd2.netlify.app
+
+# It is a quiz website.For making this site ,I used..
+* React Router
+* Bootstrap
+* Recharts
+etc...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
