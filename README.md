@@ -1,5 +1,5 @@
 * # Here is the link of live site
-*https://splendid-daffodil-c32cd2.netlify.app/home
+* https://splendid-daffodil-c32cd2.netlify.app/home
 
 # Getting Started with Create React App
 
