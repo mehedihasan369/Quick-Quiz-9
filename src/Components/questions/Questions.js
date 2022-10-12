@@ -15,13 +15,16 @@ console.log(rightAnswer)
     if (abc === rightAnswer ) {
        setShow(true);
     }
-    
+    else {
+      setShow2(true)
+    }
    
     }
 
      
 
     const [show, setShow] = useState(false);
+    const [show2, setShow2] = useState(false);
     
    
     return (<div>
@@ -47,6 +50,22 @@ console.log(rightAnswer)
             <small></small>
           </Toast.Header>
           <Toast.Body>{question.correctAnswer}</Toast.Body>
+        </Toast>
+        </div>   
+
+
+        <div>
+        <Toast onClose={() => setShow2(false)} show={show2} delay={3000} autohide>
+          <Toast.Header>
+            <img
+              src="holder.js/20x20?text=%20"
+              className="rounded me-2"
+              alt=""
+            />
+            <strong className="me-auto">Your answer is wrong!!!</strong>
+            <small></small>
+          </Toast.Header>
+          <Toast.Body>Please, try again..</Toast.Body>
         </Toast>
         </div>   
               
