@@ -2,9 +2,9 @@
 * https://splendid-daffodil-c32cd2.netlify.app
 
 # It is a quiz website.For making this site ,I used..
-*React Router
-*Bootstrap
-*Recharts
+* React Router
+* Bootstrap
+* Recharts
 etc...
 
 # Getting Started with Create React App
