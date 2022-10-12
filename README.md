@@ -1,4 +1,4 @@
-* # Here is the link of live site
+* # Here is the link of live site.
 * https://splendid-daffodil-c32cd2.netlify.app
 
 # It is a quiz website.For making this site ,I used..
